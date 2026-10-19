@@ -58,76 +58,106 @@ footer{text-align:center;padding:32px 20px;font-size:12px;color:#999;border-top:
   .plan-grid{grid-template-columns:1fr}
   .feature{flex-direction:column;gap:12px}
 }
+
+.hero .supervisor{font-size:13px;color:#777;margin-top:10px}
+.busts{display:flex;justify-content:center;gap:10px;margin:0 auto 20px}
+.busts img{width:72px;height:72px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.demo{padding:50px 20px;background:#fff;text-align:center}
+.demo h2{font-size:24px;margin-bottom:8px}
+.demo p{font-size:14px;color:#555;margin-bottom:20px}
+.demo video{width:280px;max-width:80vw;border-radius:28px;box-shadow:0 12px 40px rgba(0,0,0,.18);background:#000}
+.shots{padding:50px 0;background:#FAFAFA}
+.shots h2{text-align:center;font-size:24px;margin-bottom:20px}
+.shots .row{display:flex;gap:14px;overflow-x:auto;padding:8px 20px 20px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.shots img{width:220px;flex-shrink:0;border-radius:18px;box-shadow:0 6px 20px rgba(0,0,0,.12);scroll-snap-align:center}
+.plan .price{font-size:22px;font-weight:800;color:#1a1a1a;margin:4px 0 2px}
+.plan .price small{font-size:12px;font-weight:500;color:#777}
+.plan .trial{display:inline-block;background:#ECFDF5;color:#047857;font-size:12px;font-weight:700;padding:4px 10px;border-radius:12px;margin-bottom:10px}
+.note{font-size:12px;color:#888;text-align:center;margin-top:14px;line-height:1.7}
 </style>
 </head>
 <body>
 
 <section class="hero">
-  <div class="badge">iOS App</div>
+  <div class="badge">iPhone / iPad アプリ</div>
+  <div class="busts">
+    <img src="shots/rin.jpg" alt="桜庭 凛"><img src="shots/jin.jpg" alt="氷室 仁"><img src="shots/kaito.jpg" alt="高橋 海斗"><img src="shots/yui.jpg" alt="佐藤 結衣">
+  </div>
   <h1>歯科国試Tutors</h1>
-  <p class="subtitle">AIチューターと過去問2,160問で合格へ</p>
-  <p style="font-size:15px;color:#666;max-width:500px;margin:0 auto 24px">
-    4人の個性豊かなAIチューターと一緒に、歯科医師国家試験の合格を目指す学習アプリです。
+  <p class="subtitle">歯科国試の過去問2,160問を、チューターと解く</p>
+  <p style="font-size:15px;color:#666;max-width:520px;margin:0 auto 8px;line-height:1.8">
+    第114〜119回の6年分を原本どおり収録し、公式正答値表と全問照合。<br>4人のチューターから「推し」を選んで、正解も不正解もひとりじゃない勉強を。
   </p>
-  <!-- App Storeリンク（公開後に差し替え） -->
-  <!--
   <a class="appstore-btn" href="https://apps.apple.com/jp/app/id6762194000">
     <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp" alt="App Storeからダウンロード">
   </a>
-  -->
+  <p class="supervisor">歯科医師 高田光彦（日本臨床歯周病学会 理事）監修</p>
+</section>
+
+<section class="demo">
+  <h2>17秒でわかる使い方</h2>
+  <p>推しを選ぶ → 1問解く → 正解でチューターが褒める → 詳細解説 → 類題</p>
+  <video src="preview.mp4" autoplay muted loop playsinline poster="shots/03.jpg"></video>
 </section>
 
 <section class="features">
   <div class="container">
 
     <div class="feature">
-      <div class="feature-icon" style="background:#FFE4F0">🎓</div>
+      <div class="feature-icon" style="background:#E8F0FE">📚</div>
       <div>
-        <h3>4人のAIチューターが伴走</h3>
-        <p>可愛い系・クール系・元気系・癒し系の4タイプから、自分に合ったチューターを選択。正解時の褒め言葉や不正解時の励ましで、モチベーションを維持します。</p>
+        <h3>過去問2,160問を原本どおり収録</h3>
+        <p>第114〜119回（6年分）の全問題を、別冊の画像つきで収録。公式の正答値表と全問を照合し、複数正解・採点除外も反映しています。第114〜117回の全問と、第119回の必修問題は無料で解けます。</p>
       </div>
     </div>
 
     <div class="feature">
-      <div class="feature-icon" style="background:#E8F0FE">📚</div>
+      <div class="feature-icon" style="background:#FFE4F0">🎓</div>
       <div>
-        <h3>過去問2,160問を完全収録</h3>
-        <p>第116回〜第119回（4年分）の歯科医師国家試験を、出題基準に準拠した18科目に分類。基礎系7科目と臨床系11科目を網羅しています。</p>
+        <h3>4人のチューターから「推し」を選ぶ</h3>
+        <p>綺麗系の凛、クール系の仁、熱血系の海斗、お姉さん系の結衣。正解すれば褒め、間違えれば励まし、PROなら声で話しかけてくれます。2人まで同時に選べます。</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon" style="background:#F3E8FD">💎</div>
+      <div>
+        <h3>全選択肢の「なぜ違うか」まで解説</h3>
+        <p>すべての問題に基本解説を無料で掲載。PROでは各選択肢の正誤理由を書いた詳細AI解説と、理解を確かめるAI類題が全問につきます。無料でも1セッションに1問、PROの中身をそのまま体験できます。</p>
       </div>
     </div>
 
     <div class="feature">
       <div class="feature-icon" style="background:#E6F9EF">🤖</div>
       <div>
-        <h3>AIが一問ずつ丁寧に解説</h3>
-        <p>全問にAI生成の「ひとこと解説」を搭載。PROプランでは正解の根拠から臨床的意義まで踏み込んだ「詳細AI解説」で深い理解を促します。</p>
+        <h3>わからないを、その場でAIに質問</h3>
+        <p>問題の画面からそのまま質問。チューターが出題傾向や引っかけポイントを踏まえて答えます（無料 月10回・PRO 月400回）。</p>
       </div>
     </div>
 
     <div class="feature">
-      <div class="feature-icon" style="background:#FFF3E0">🎯</div>
+      <div class="feature-icon" style="background:#FFEBEE">⏱</div>
       <div>
-        <h3>AI予測問題で実力チェック</h3>
-        <p>各問題に関連したAI予測問題を出題。過去問の知識を応用できるか試せる、本番さながらの練習ができます。</p>
+        <h3>本番と同じ形式の模試</h3>
+        <p>A〜Dの各90問を制限時間つきで。総得点だけでなく、必修問題80%の絶対基準も判定します。</p>
       </div>
     </div>
 
     <div class="feature">
-      <div class="feature-icon" style="background:#F3E8FD">📊</div>
+      <div class="feature-icon" style="background:#E0F2FE">📅</div>
       <div>
-        <h3>科目別の学習進捗を可視化</h3>
-        <p>科目ごとの正答率をリアルタイムに追跡。合格ラインとの比較で弱点が一目でわかります。</p>
+        <h3>第120回まで、あと何日</h3>
+        <p>ホームに本番までのカウントダウンと連続学習日数を表示。翌日のひとこと、連続記録、本番100・50・30・7日前のリマインド通知で、毎日10問を習慣にします。</p>
       </div>
     </div>
 
-    <div class="feature">
-      <div class="feature-icon" style="background:#E0F7FA">🎵</div>
-      <div>
-        <h3>BGMで集中力アップ</h3>
-        <p>学習用BGMを複数収録。カフェ気分で、リラックスしながら効率よく勉強できます。</p>
-      </div>
-    </div>
+  </div>
+</section>
 
+<section class="shots">
+  <h2>画面</h2>
+  <div class="row">
+    <img src="shots/01.jpg" alt="過去問2,160問をチューターと解く"><img src="shots/02.jpg" alt="4人から推しを選ぶ"><img src="shots/03.jpg" alt="正解でチューターが褒める"><img src="shots/04.jpg" alt="詳細AI解説"><img src="shots/05.jpg" alt="AI類題"><img src="shots/06.jpg" alt="AIに質問"><img src="shots/07.jpg" alt="模試"><img src="shots/08.jpg" alt="カウントダウン"><img src="shots/09.jpg" alt="無料とPROの範囲">
   </div>
 </section>
 
@@ -136,25 +166,32 @@ footer{text-align:center;padding:32px 20px;font-size:12px;color:#999;border-top:
     <h2>プラン</h2>
     <div class="plan-grid">
       <div class="plan">
-        <h3>無料プラン</h3>
+        <h3>無料</h3>
+        <div class="price">¥0</div>
         <ul>
-          <li>第116回・117回の全問題（720問）</li>
-          <li>毎日10問のPRO問題お試し</li>
-          <li>ひとこと解説</li>
-          <li>AI深掘り質問（月10回）</li>
+          <li>第114〜117回の全問題（1,440問）</li>
+          <li>第119回の必修問題（80問）</li>
+          <li>全問の基本解説・間違い直し・学習記録</li>
+          <li>模試（第114〜117回）月2回</li>
+          <li>AIに質問 月10回</li>
+          <li>1セッションに1問、PROの体験</li>
         </ul>
       </div>
       <div class="plan pro">
-        <h3>PROプラン</h3>
+        <h3>PRO</h3>
+        <div class="price">¥1,480<small>/月</small></div>
+        <div class="trial">7日間無料でお試し</div>
         <ul>
-          <li>第114〜117回 全1,440問アクセス（無料）</li>
-          <li>詳細AI解説</li>
-          <li>AI深掘り質問（月400回）</li>
-          <li>AI予測問題</li>
-          <li>模擬試験無制限</li>
+          <li>第118回・第119回の全問題</li>
+          <li>全問に詳細AI解説＋AI類題</li>
+          <li>推しチューターの声</li>
+          <li>模試 全年度・回数無制限</li>
+          <li>AIに質問 月400回</li>
         </ul>
+        <p style="font-size:12px;color:#777;margin-top:10px">3ヶ月 ¥3,980（月あたり約¥1,327）／6ヶ月 ¥6,980（約¥1,163）／年 ¥11,800（約¥983）。いつでも解約できます。</p>
       </div>
     </div>
+    <p class="note">価格は税込・日本のApp Storeでの表示価格です。無料期間中に解約すれば料金はかかりません。</p>
   </div>
 </section>
 
@@ -206,7 +243,7 @@ footer{text-align:center;padding:32px 20px;font-size:12px;color:#999;border-top:
     <h3>5. お問い合わせ</h3>
     <p>プライバシーに関するお問い合わせは <a href="mailto:takatadc@gmail.com">takatadc@gmail.com</a> までご連絡ください。</p>
 
-    <p style="margin-top:24px;font-size:13px;color:#999">最終更新日: 2026年10月18日</p>
+    <p style="margin-top:24px;font-size:13px;color:#999">最終更新日: 2026年10月19日</p>
   </div>
 </section>
 
